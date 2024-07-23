@@ -49,14 +49,18 @@ const OtpForm: React.FC = () => {
             setIsVerified(false)
         }
     }
-    if (isVerified) {
-        <Navigate to="/courses" />
-    }
+    // setTimeout(() => {
+    //     {
+    //         isVerified && (
+    //             <Navigate to="/courses" replace={true} />
+    //         )
+    //     }
+    // }, 1000);
+
     return (
         <>
-            {isVerified && (
-                <Navigate to="/courses" replace={true} />
-            )}
+
+
             <div className='flex flex-col pt-16 items-center bg-Blue min-h-screen'>
                 <h2 className="text-white text-6xl font-bold">Chai aur Code</h2>
                 <div className="bg-white mt-16 rounded-3xl">
@@ -80,7 +84,7 @@ const OtpForm: React.FC = () => {
                                 />
                             ))}
                         </div>
-                        <button type="submit" onClick={handleSubmit} className={`w-96 ${isVerified === null ? "bg-[#112D4E] " : isVerified === true ? "bg-[#23CF9B]" : "bg-[#EB2D5B]"} text-xl text-white py-4 rounded-lg`}>Verify Account</button>
+                        <button type="submit" onClick={handleSubmit} className={`w-96 ${isVerified === null ? "bg-[#112D4E] " : isVerified === true ? "bg-[#23CF9B]" : "bg-[#EB2D5B]"} text-xl text-white py-4 rounded-lg`}>{isVerified === null ? "Verify Account" : isVerified === true ? "Verified" : "Verification failed"}</button>
                         <p className="mt-4 text-center text-Gray pb-10 mb-5 text-xl">Didn't receive code? <a href="#" className="text-[#112D4E] ">Resend</a></p>
                     </div>
                 </div>
