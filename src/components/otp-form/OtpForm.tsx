@@ -61,7 +61,7 @@ const OtpForm: React.FC = () => {
         <>
 
 
-            <div className='flex flex-col pt-16 items-center bg-Blue min-h-screen'>
+            <div className='flex noselect flex-col pt-16 items-center bg-Blue min-h-screen'>
                 <h2 className="text-white text-6xl font-bold">Chai aur Code</h2>
                 <div className="bg-white mt-16 rounded-3xl">
                     <div className="mx-20 text-center">

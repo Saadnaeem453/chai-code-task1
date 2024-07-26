@@ -5,7 +5,7 @@ const Layout: React.FC = () => {
     return (
         <div className='relative min-h-screen'>
             <Outlet />
-            <div className='fixed bottom-4 right-4'>
+            <div className='fixed bottom-8 right-8'>
                 <img src={Icon} alt="Icon" />
             </div>
 

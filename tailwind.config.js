@@ -8,7 +8,10 @@ export default {
       colors: {
         Blue: "#3F72AF",
         Gray: "#BFBFBF",
-      }
+      },
+      borderWidth: {
+        '0.5': '0.1px',
+      },
     },
   },
   plugins: [],
