@@ -16,3 +16,59 @@
     user-select: none;
     /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
+
+.table-container {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table-title-cell {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.table-title-cell img {
+    width: 80px;
+    height: 45px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.table-title-cell .title-text {
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.table-title-cell .title-text:hover {
+    text-decoration: underline;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status.published {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #4ED04B;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.status.unpublished {
+    background-color: #F3F3F3;
+    color: #4B4747;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.data-table-cell {
+    padding: 16px;
+
+}

@@ -2,6 +2,7 @@ import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-d
 import OtpForm from "./components/otp-form/OtpForm"
 import Layout from "./Layout"
 import CourseList from "./components/course-list/CourseList"
+import Batches from "./components/batches/Batches"
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
             <Route index element={<Navigate to="/otp-form" />} />
             <Route path="/otp-form" element={<OtpForm />} />
             <Route path="/course-list" element={<CourseList />} />
-
+            <Route path="/batches" element={<Batches />} />
           </Route>
         </Routes>
       </Router>
